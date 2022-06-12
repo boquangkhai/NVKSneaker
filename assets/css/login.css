@@ -128,8 +128,13 @@ html {
 .forgot-password,
 .dont-have-account a {
     color: #00deb9;
+    text-decoration: none;
 }
 
+.forgot-password:hover,
+.dont-have-account a:hover {
+    text-decoration: underline;
+}
 
 
 
