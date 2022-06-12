@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <PHP IF (IS_HOME() ) : />
+    <meta property="og:image"
+        content="https://scontent.fsgn5-2.fna.fbcdn.net/v/t39.30808-6/272690860_674262896908892_4544726612819413011_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=jb_tP8k5ng8AX8U_XuR&_nc_ht=scontent.fsgn5-2.fna&oh=00_AT9NpIPsLTONM_QHndxTYLiFVSNYXOwXoPC_nwurK6EsPQ&oe=62A93D18" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" ; />
+    <PHP ENDIF ; />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVK SNEAKER</title>
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+
+
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- BEGIN: NAV -->
+            <div class="logo">
+                <a href="#"><img class="logo-img" src="./assets/img/logo.png" alt=""></a>
+            </div>
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#content">Sản phẩm</a>
+                    <ul class="subnav">
+                        <li><a href="./product-list/adidas.html">Adidas</a></li>
+                        <li><a href="./product-list/nike.html">Nike</a></li>
+                        <li><a href="./product-list/vans.html">Vans</a></li>
+                        <li><a href="./product-list/converse.html">Converse</a></li>
+                        <li><a href="./product-list/mlb.html">MLB</a></li>
+                    </ul>
+                </li>
+                <li><a href="#best-seller">Best Seller</a></li>
+                <li><a href="#member">Team</a></li>
+            </ul>
+            <!-- END: NAV -->
+
+            <!-- User Button -->
+            <div class="btn ">
+                <a class="login" href="./login.html">
+                    <i class="user-icon fa-solid fa-user"></i>
+                </a>
+            </div>
+
+            <!-- Cart Button -->
+            <div class="btn cart-btn">
+                <i class="cart-icon fa-solid fa-cart-shopping"></i>
+                <span class="cart-notice">3</span>
+                <div class="cart-list">
+                    <p class="cart-title">Sản phẩm đã thêm</p>
+                    <ul class="cart-list-item">
+                        <li class="cart-item">
+                            <img src="./assets/img/Sneaker/adidas1.jpg" alt="" class="cart-item-img">
+                            <div class="cart-item-info">
+                                <div class="cart-item-header">
+                                    <h5 class="cart-item-name">Adidas Alphabounce Beyond Grey</h5>
+                                    <div class="cart-item-price-wrap">
+                                        <span class="cart-item-price">1,900,000</span>
+                                        <span class="cart-item-multiple">x</span>
+                                        <span class="cart-item-amount">1</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item-body">
+                                    <span class="cart-item-description">Size: 39</span>
+                                    <span class="cart-item-remove">Xóa</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="cart-item">
+                            <img src="./assets/img/Sneaker/adidas4.jpg" alt="" class="cart-item-img">
+                            <div class="cart-item-info">
+                                <div class="cart-item-header">
+                                    <h5 class="cart-item-name">Adidas Prophere Grey Solar Red</h5>
+                                    <div class="cart-item-price-wrap">
+                                        <span class="cart-item-price">1,195,000</span>
+                                        <span class="cart-item-multiple">x</span>
+                                        <span class="cart-item-amount">1</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item-body">
+                                    <span class="cart-item-description">Size: 39</span>
+                                    <span class="cart-item-remove">Xóa</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="cart-item">
+                            <img src="./assets/img/Sneaker/adidas5.jpg" alt="" class="cart-item-img">
+                            <div class="cart-item-info">
+                                <div class="cart-item-header">
+                                    <h5 class="cart-item-name">Adidas Alphabounce Instinct</h5>
+                                    <div class="cart-item-price-wrap">
+                                        <span class="cart-item-price">1,400,000</span>
+                                        <span class="cart-item-multiple">x</span>
+                                        <span class="cart-item-amount">1</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item-body">
+                                    <span class="cart-item-description">Size: 39</span>
+                                    <span class="cart-item-remove">Xóa</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button onclick="buyNow()" class="check-cart">Mua ngay</button>
+                </div>
+            </div>
+            <!-- END: Cart Button -->
+
+            <!-- Search Button -->
+            <div class="btn search-btn">
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                <div class="search-input">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="slider">
+            <div class="buy-now">
+                <a class="buy-now-link" href="#"></a>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- New -->
+            <div class="content-title">
+                <h2>New Arrivals</h2>
+                <p>Các sản phẩm mới có tại cửa hàng</p>
+            </div>
+
+            <div class="sneaker-container">
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/nike5_page.html"><img src="./assets/img/Sneaker/nike5.jpg" alt=""
+                                    class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/nike5_page.html">
+                                    <h4 class="sneaker-name">Air Force 1 Shadow Pale Ivory</h4>
+                                </a>
+                                <p class="sneaker-price">3,250,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/nike8_page.html"><img src="./assets/img/Sneaker/nike8.jpg" alt=""
+                                    class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/nike8_page.html">
+                                    <h4 class="sneaker-name">Air Force 1 Low G-Dragon Para-Noise</h4>
+                                </a>
+                                <p class="sneaker-price">23,550,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/nike1_page.html"><img src="./assets/img/Sneaker/nike1.jpg" alt=""
+                                    class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/nike1_page.html">
+                                    <h4 class="sneaker-name">Air Max 97 Ultra 17 Triple Black</h4>
+                                </a>
+                                <p class="sneaker-price">6,150,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/nike2_page.html"><img src="./assets/img/Sneaker/nike2.jpg" alt=""
+                                    class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/nike2_page.html">
+                                    <h4 class="sneaker-name">Air Force 1 '07 LV8 Overbranding</h4>
+                                </a>
+                                <p class="sneaker-price">3,550,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="see-more-btn">
+                <button onclick="seeMore()">Xem thêm</button>
+            </div>
+
+            <p style="text-align:center">________________________________________________________</p>
+
+            <!-- Best seller -->
+            <div id="best-seller" class="content-title">
+                <h2>Best Sellers</h2>
+                <p>Các sản phẩm bán chạy tại cửa hàng</p>
+            </div>
+
+            <div class="sneaker-container">
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/adidas1_page.html"><img src="./assets/img/Sneaker/adidas1.jpg"
+                                    alt="" class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/adidas1_page.html">
+                                    <h4 class="sneaker-name">Adidas Alphabounce Beyond Grey</h4>
+                                </a>
+                                <p class="sneaker-price">1,900,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/adidas2_page.html"><img src="./assets/img/Sneaker/adidas2.jpg"
+                                    alt="" class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/adidas2_page.html">
+                                    <h4 class="sneaker-name">Adidas Alphabounce Beyond Cloud White</h4>
+                                </a>
+                                <p class="sneaker-price">1,900,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/nike1_page.html"><img src="./assets/img/Sneaker/nike1.jpg" alt=""
+                                    class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/nike1_page.html">
+                                    <h4 class="sneaker-name">Air Max 97 Ultra 17 Triple Black</h4>
+                                </a>
+                                <p class="sneaker-price">6,150,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/nike2_page.html"><img src="./assets/img/Sneaker/nike2.jpg" alt=""
+                                    class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/nike2_page.html">
+                                    <h4 class="sneaker-name">Air Force 1 '07 LV8 Overbranding</h4>
+                                </a>
+                                <p class="sneaker-price">3,550,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/adidas4_page.html"><img src="./assets/img/Sneaker/adidas4.jpg"
+                                    alt="" class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/adidas4_page.html">
+                                    <h4 class="sneaker-name">Adidas Prophere Grey Solar Redy</h4>
+                                </a>
+                                <p class="sneaker-price">1,195,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/nike7_page.html"><img src="./assets/img/Sneaker/nike7.jpg" alt=""
+                                    class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/nike7_page.html">
+                                    <h4 class="sneaker-name">Air Force 1 Low GS Triple White</h4>
+                                </a>
+                                <p class="sneaker-price">2,850,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/converse1_page.html"><img src="./assets/img/Sneaker/converse1.jpg"
+                                    alt="" class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/converse1_page.html">
+                                    <h4 class="sneaker-name">Converse Chuck 70 High Top White (1970s)</h4>
+                                </a>
+                                <p class="sneaker-price">2,000,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sneaker-cover">
+                    <div class="sneaker-list">
+                        <div class="sneaker-item">
+                            <a href="./sneaker_list/nike8_page.html"><img src="./assets/img/Sneaker/nike8.jpg" alt=""
+                                    class="sneaker-img"></a>
+                            <div class="sneaker-body">
+                                <a href="./sneaker_list/nike8_page.html">
+                                    <h4 class="sneaker-name">Air Force 1 Low G-Dragon Para-Noise White Swoosh</h4>
+                                </a>
+                                <p class="sneaker-price">23,550,000<span>đ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="see-more-btn">
+                <button onclick="seeMore()">Xem thêm</button>
+            </div>
+
+            <!--End Best seller  -->
+
+        </div>
+
+        <div id="member">
+            <h2> Thành viên</h2>
+            <div class="member-list">
+                <div class="member-item">
+                    <p class="member-name">Quang Khải</p>
+                    <img src="./assets/img/member/Khải.jpg" alt="Khải" class="member-img">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">Thái Nguyên</p>
+                    <img src="./assets/img/member/Nguyên.jpg" alt="Thái Nguyên" class="member-img">
+                </div>
+                <div class="member-item">
+                    <p class="member-name">Ích Vương</p>
+                    <img src="./assets/img/member/Vương.jpg" alt="Duy Ích" class="member-img">
+                </div>
+            </div>
+
+            ____________________________________________________________________
+
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+        </div>
+
+        <div id="footer">
+            <div class="social-list">
+                <a href="https://www.facebook.com/quang.khai227/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/q.khai_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <p class="copyright">Powered by
+                <a href="https://www.facebook.com/quang.khai227/">Khải</a>
+                <a class="vertical-line" href="#footer">Nguyên</a>
+            </p>
+
+        </div>
+    </div>
+
+
+    <script>
+        var xValues = ["Quang Khải", "Thái Nguyên", "Ích Vương"];
+        var yValues = [50, 50, 0];
+        var barColors = ["pink", "green", "blue"];
+
+        new Chart("myChart", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: "Bảng tiến độ làm việc nhóm"
+                }
+            }
+        })
+
+        function buyNow() {
+            alert("Mua hàng thành công");
+        }
+
+        function seeMore() {
+            alert("Đã hết");
+        }
+
+        
+
+    </script>
+</body>
+
+</html>
+
+<script>
+    function seeMore() {
+        alert("Đã hết");
+    }
+</script>
+
+<button onclick="seeMore()">Xem thêm</button>

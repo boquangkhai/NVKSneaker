@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách giày Adidas</title>
+    <link rel="icon" href="../assets/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/sneaker-list/style_sneaker_page_N.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/font/css/all.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- BEGIN: NAV -->
+            <div class="logo">
+                <a href="../index.html"><img class="logo-img" src="../assets/img/logo.png" alt=""></a>
+            </div>
+            <ul id="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="../index.html#content">Sản phẩm</a>
+                    <ul class="subnav">
+                        <li><a href="../product-list/adidas.html">Adidas</a></li>
+                        <li><a href="../product-list/nike.html">Nike</a></li>
+                        <li><a href="../product-list/vans.html">Vans</a></li>
+                        <li><a href="../product-list/converse.html">Converse</a></li>
+                        <li><a href="../product-list/mlb.html">MLB</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#best-seller">Best Seller</a></li>
+                <li><a href="../index.html#member">Team</a></li>
+            </ul>
+            <!-- END: NAV -->
+
+            <!-- User Button -->
+            <div class="btn ">
+                <a class="login" href="../login.html">
+                    <i class="user-icon fa-solid fa-user"></i>
+                </a>
+            </div>
+
+            <!-- Cart Button -->
+            <div class="btn cart-btn">
+                <i class="cart-icon fa-solid fa-cart-shopping"></i>
+                <span class="cart-notice">3</span>
+                <div class="cart-list">
+                    <p class="cart-title">Sản phẩm đã thêm</p>
+                    <ul class="cart-list-item">
+                        <li class="cart-item">
+                            <img src="../assets/img/Sneaker/adidas1.jpg" alt="" class="cart-item-img">
+                            <div class="cart-item-info">
+                                <div class="cart-item-header">
+                                    <h5 class="cart-item-name">Adidas Alphabounce Beyond Grey</h5>
+                                    <div class="cart-item-price-wrap">
+                                        <span class="cart-item-price">1,900,000</span>
+                                        <span class="cart-item-multiple">x</span>
+                                        <span class="cart-item-amount">1</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item-body">
+                                    <span class="cart-item-description">Size: 39</span>
+                                    <span class="cart-item-remove">Xóa</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="cart-item">
+                            <img src="../assets/img/Sneaker/adidas4.jpg" alt="" class="cart-item-img">
+                            <div class="cart-item-info">
+                                <div class="cart-item-header">
+                                    <h5 class="cart-item-name">Adidas Prophere Grey Solar Red</h5>
+                                    <div class="cart-item-price-wrap">
+                                        <span class="cart-item-price">1,195,000</span>
+                                        <span class="cart-item-multiple">x</span>
+                                        <span class="cart-item-amount">1</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item-body">
+                                    <span class="cart-item-description">Size: 39</span>
+                                    <span class="cart-item-remove">Xóa</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="cart-item">
+                            <img src="../assets/img/Sneaker/adidas5.jpg" alt="" class="cart-item-img">
+                            <div class="cart-item-info">
+                                <div class="cart-item-header">
+                                    <h5 class="cart-item-name">Adidas Alphabounce Instinct</h5>
+                                    <div class="cart-item-price-wrap">
+                                        <span class="cart-item-price">1,400,000</span>
+                                        <span class="cart-item-multiple">x</span>
+                                        <span class="cart-item-amount">1</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-item-body">
+                                    <span class="cart-item-description">Size: 39</span>
+                                    <span class="cart-item-remove">Xóa</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button onclick="buyNow()" class="check-cart">Mua ngay</button>
+                </div>
+            </div>
+            <!-- END: Cart Button -->
+
+            <!-- Search Button -->
+            <div class="btn search-btn">
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                <div class="search-input">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="content" class="mt-20">
+            <div class="sneaker_main">
+                <div class="main_img_cont"><img src="../assets/img/Sneaker/mlb5.jpg" class="main_img"></div>
+
+                <div class="title">MLB Big Ball Chunky P Boston Red Sox NY Yankees</div>
+                <div class="rating">
+                    <div class="star"><img src="../assets/img/Vote/4star.png" class="star_img"></div>
+                    <div class="num_people">(15 đánh giá của khách hàng)</div>
+                </div>
+                <div class="price">1,100,000<span class="currencysymbol">₫</span></div>
+                <div class="size">
+                    <div class="size_dropdown">Size
+                        <select class="size_dropdown_value">
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="amount_and_add">
+                    <input type="number" class="amount_value" min="1" max="10" value="1">
+                    <button class="add_button" onclick="notice()">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+
+                <div class="description">
+                    <p class="description_title">Mô tả</p>
+                    <p class="description_text">- Hãng giầy thương hiệu của các đội bóng chày nổi tiếng
+                        <br> - Phần upper được phủ bởi chất liệu da màu trắng hơi ngã màu tạo nên sức hút mãnh liệt
+                        <br> - Các mảng da được hoàn thiện với những đường may đều và chắc chắn.
+                        <br> - Miếng lót rất dày và êm ái
+                        <br> - Thiết kế đơn giản trong tông màu trắng cơ bản mang lại vẻ thanh thoát cho người mang
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="footer">
+            <div class="social-list">
+                <a href="https://www.facebook.com/quang.khai227/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/q.khai_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <p class="copyright">Powered by
+                <a href="https://www.facebook.com/quang.khai227/">Khải</a>
+                <a class="vertical-line" href="#footer">Nguyên</a>
+            </p>
+
+        </div>
+    </div>
+
+    <script>
+        function notice() {
+            alert("Đã thêm vào giỏ hàng!");
+        }
+    </script>
+</body>
+
+</html>

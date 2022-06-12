@@ -1,0 +1,479 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;       
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* common */
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* main */
+
+#main {
+    
+} 
+
+#header {
+    background-color: #f8f8f8;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#header .logo-img {
+    width: 80px;
+    position: absolute;
+    margin-left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#nav {
+    display: inline-block;
+    margin-left: 125px;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+#nav li a {
+    line-height: 50px;
+    padding: 0 24px;
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    line-height: 38.5px;
+    padding: 0 12px;
+}
+
+#header .btn {
+    float: right;
+}
+
+#header .btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#header .btn:hover .cart-notice {
+    border: 3px solid rgb(199, 198, 198);
+}
+
+#header .cart-icon,
+#header .user-icon,
+#header .search-icon {
+    line-height: 50px;
+    padding: 0 25px;
+}
+
+#header .login {
+    color: #000;
+}
+
+#header .search-btn {
+    position: relative;
+}
+
+#header .search-input {
+    position: absolute;
+    display: none;
+    top: 4px;
+    right: 66px;
+    padding: 6px 6px;
+    background-color: rgb(248, 238, 238);
+    border-radius: 4px;
+}
+
+#header .search-input input {
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px;
+    border-style: none;
+    padding: 2px 8px;
+    outline: none;
+}
+
+#header .search-btn:hover .search-input {
+    display: block;
+}
+
+/* Cart */
+#header .cart-btn {
+    position: relative;
+}
+
+#header .cart-notice {
+    position: absolute;
+    top: 2px;
+    left: 35px;
+    padding: 1px 6px;
+    background-color: #fdcaca;
+    color: rgb(100, 42, 42);
+    font-size: 13px;
+    line-height: 13px;
+    border-radius: 10px;
+    border: 3px solid #f8f8f8d5;
+}
+
+#header .cart-title {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 12px 12px 0 12px;
+}
+
+
+#header .cart-btn:hover .cart-list {
+    display: block;
+}
+
+.cart-list {
+    position: absolute;
+    top: 100%;
+    right: 30px;
+    background-color: #fff;
+    min-width: 450px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #ccc;
+    cursor: default;
+    display: none;
+}
+
+
+.cart-list-item {
+    list-style: none;
+    margin: 12px 0;
+}
+
+.cart-item {
+    display: flex;
+    padding: 12px 0;
+}
+
+.cart-item:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.cart-item-img {
+    width: 50px;
+    margin: 0 12px;
+}
+
+.cart-item-info {
+    width: 100%;
+    margin-right: 12px;
+}
+
+.cart-item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item-name {
+    font-size: 14px;
+}
+
+.cart-item-price-wrap {
+
+}
+
+.cart-item-price {
+    font-size: 14px;
+}
+
+.cart-item-multiple {
+    color: #757575;
+    font-size: 0.9rem;
+    margin: 0 4px;
+}
+
+.cart-item-amount {
+    color: #757575;
+    font-size: 0.9rem;
+}
+
+.cart-item-body {
+    margin: 12px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item-description {
+    color: #757575;
+    font-size: 14px;
+}
+
+.cart-item-remove {
+    color: #333;
+    font-size: 14px;
+}
+
+.cart-item-remove:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.check-cart {
+    padding: 12px;
+    margin: 0 12px 12px;
+    border: none;
+    background-color: rgba(204, 204, 204, 1);
+    float: right;
+}
+
+.check-cart:hover {
+    background-color: rgba(204, 204, 204, 0.6);
+    cursor: pointer;
+}
+
+
+
+/* ------------------------------ */
+
+#slider {
+    margin-top: 50px;
+    padding: 20px 150px;
+    background-color: #FFF6FA;
+
+}
+
+#slider .buy-now {
+    position: relative;
+    padding-top: 50%;
+    background: url('../img/Slider/Slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .buy-now-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Content */
+
+#content {
+    padding: 64px 16px;
+    background-color: #FFF6FA;
+}
+
+.content-title {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.content-title h2,h1 {
+    color: #185137;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.content-title p {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+#content .sneaker-container {
+    margin: 35px 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content .sneaker-cover {
+    width: 25%;
+    padding: 15px;
+}
+
+#content .sneaker-list {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#content .sneaker-list:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+#content .sneaker-item {
+    align-items: center;
+}
+
+#content .sneaker-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+#content .sneaker-img {
+    width: 100%;
+}
+
+#content .sneaker-body {
+    text-align: center;
+    padding: 12px;
+}
+
+#content .sneaker-name {
+    font-size: 15px;
+    height: 40px;
+}
+
+#content .sneaker-price {
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+#content .sneaker-price span {
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+#content .see-more-btn {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#content .see-more-btn button {
+    margin-bottom: 50px;
+    font-weight: 600;
+    line-height: 24px;
+    display: inline-block;
+    color: #185137;
+    border: 1px solid #185137;
+    border-radius: 4px;
+    padding: 10px 50px;
+    background-color: #fff;
+    transition: all 0.3s linear;
+}
+
+#content .see-more-btn button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Phân công */
+
+#member {
+    padding: 88px 16px;
+    min-height: 300px;
+    background-color: rgb(245, 234, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#member > h2 {
+    font-size: 24px;
+}
+
+#member .member-list {
+    width: 800px;
+    margin-top: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.member-list .member-name {
+    color: #333;
+    font-weight: 600;
+}
+
+.member-list img {
+    margin-top: 12px;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+#myChart {
+    margin-top: 24px;
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    padding: 48px 16px;
+    background-color: #fff;
+} 
+
+#footer .social-list {
+    font-size: 21px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 8px;
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
+#footer .vertical-line {
+    border-left: 1px solid #000;
+    padding-left: 4px;
+}
