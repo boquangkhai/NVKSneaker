@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;       
+    box-sizing: border-box;
 }
 
 html {
@@ -23,8 +23,8 @@ html {
 /* main */
 
 #main {
-    
-} 
+    overflow: hidden;
+}
 
 #header {
     background-color: #f8f8f8;
@@ -50,11 +50,12 @@ html {
     margin-left: 125px;
 }
 
-#nav, .subnav {
+#nav,
+.subnav {
     list-style-type: none;
 }
 
-#nav > li {
+#nav>li {
     display: inline-block;
 }
 
@@ -62,7 +63,7 @@ html {
     position: relative;
 }
 
-#nav > li > a {
+#nav>li>a {
     text-transform: uppercase;
 }
 
@@ -74,7 +75,7 @@ html {
     display: block;
 }
 
-#nav > li:hover > a,
+#nav>li:hover>a,
 #nav .subnav li:hover a {
     background-color: #ccc;
 }
@@ -223,9 +224,7 @@ html {
     font-size: 14px;
 }
 
-.cart-item-price-wrap {
-
-}
+.cart-item-price-wrap {}
 
 .cart-item-price {
     font-size: 14px;
@@ -313,7 +312,8 @@ html {
     text-align: center;
 }
 
-.content-title h2,h1 {
+.content-title h2,
+h1 {
     color: #185137;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -413,7 +413,7 @@ html {
     align-items: center;
 }
 
-#member > h2 {
+#member>h2 {
     font-size: 24px;
 }
 
@@ -448,7 +448,7 @@ html {
     text-align: center;
     padding: 48px 16px;
     background-color: #fff;
-} 
+}
 
 #footer .social-list {
     font-size: 21px;
@@ -477,4 +477,122 @@ html {
 #footer .vertical-line {
     border-left: 1px solid #000;
     padding-left: 4px;
+}
+
+
+
+/* Responsive */
+
+#nav .nav-mobile-btn {
+    display: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+   
+
+    #nav {
+        margin-left: 10px;
+    }
+
+    #nav>li {
+        display: none;
+    }
+
+    #header .logo {
+        display: none;
+    }
+
+    #nav .nav-mobile-btn {
+        display: block;
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+        animation: fadeIn linear .2s;
+    }
+
+    .nav-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 320px;
+        max-width: 100%;
+        background-color: #fff;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform linear .3s, opacity linear .3s; 
+    }
+
+    .nav-mobile-list {
+        margin-top: 20px;
+        list-style-type: none;
+    }
+
+    .nav-mobile-close {
+        font-size: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding: 16px;
+    }
+
+    .nav-input:checked ~ .nav-overlay {
+        display: block;
+    }
+
+    .nav-input:checked ~ .nav-mobile {
+        transform: translateX(0%); 
+        opacity: 1;
+    }
+
+    .nav-mobile li:hover a{
+        background-color: #ccc;
+        color: #fff;    
+    }
+
+    #content .sneaker-container {
+        margin: 0;
+    }
+
+    #content .sneaker-cover {
+        width: 100%;
+    }
+
+    #slider {
+        padding: 0;
+    }
+
+    .subnav-mobile {
+        position: initial !important;
+    }
+
+    .subnav-mobile li a {
+        border: none;
+    }
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }       
+
+    to {
+        opacity: 1;
+    }
 }
